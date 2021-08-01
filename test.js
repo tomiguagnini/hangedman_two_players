@@ -1,0 +1,23 @@
+const Ahorcado = require('./ahorcado-back')
+
+let ahorcado = new Ahorcado()
+let player1 = ahorcado.getPlayers(1)
+let player2 =ahorcado.getPlayers(2)
+console.log(ahorcado.getTurn())
+console.log(ahorcado.getBoard())
+console.log(ahorcado.player_valid(player1)== 1)
+console.log(ahorcado.player_valid(player2)== 2)
+ahorcado.setTurn(2)
+ahorcado.setTurn(2)
+ahorcado.setTurn(1)
+ahorcado.setTurn(2)
+console.log(ahorcado.player_valid(ahorcado.getTurn()) == 1)
+ahorcado.setTurn(2)
+ahorcado.setTurn(1)
+console.log(ahorcado.player_valid(ahorcado.getTurn()) == 2)
+console.log(ahorcado.letter_valid('A'))
+console.log(ahorcado.letter_valid('x'))
+console.log(ahorcado.letter_valid('x'))
+console.log(ahorcado)
+
+

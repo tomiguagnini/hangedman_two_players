@@ -1,0 +1,194 @@
+*,::after,::before{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --fondo-primario:rgba(0, 0, 0,.9);
+    --fondo-secundario:rgba(190, 110, 44, 0.9);
+    --fonts:rgba(200,200,200, .9);
+    --acent:#33054da6;
+}
+
+html{
+    font-family: 'Dosis',sans-serif;
+    font-size: 62,5%;
+
+}
+body{
+    background-image: url('../img/design1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: var(--fondo-primario);
+    color: var(--fonts);
+}
+
+
+.container{
+    height: 100vh;
+    width: 60vw;
+    margin: 1rem auto;
+    background-color: var(--fondo-secundario);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 10%;
+    width: 100%;
+    margin-bottom: 15vh;
+}
+
+
+.titulo img{
+    width: 200px;
+    height: 100%; 
+    
+    
+}
+.titulo h1{
+    height: 100%;
+    font-size: 4.5rem;
+    /* margin-bottom: 50px; */
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+  }
+.link input {
+    line-height: 2rem;
+    outline:0;
+    border: 0;
+    background: none;
+    color: var(--fonts);
+    border-bottom: 2px solid var(--acent);
+    width: 30%;
+    font-size: 1rem;
+  }
+  .btn-copy {
+    width: 4rem;
+    height: 2rem;
+    border:0;
+    border-radius: 20px;
+    background-color: var(--fondo-primario);
+    color: var(--fonts);
+    font-size: 1rem;
+    font-family: Dosis;
+  }
+
+.notificaciones h2 {
+    text-align: center;
+    font-size: 2rem;
+    
+}
+.letras{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    background-color:none;
+    position: relative;
+}
+.letras input{
+    width: 15%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1%;
+    line-height: 2rem;
+    background: none;
+    outline:0;
+    border: 0;
+    color:var(--fonts);
+    border-bottom: 2px solid var(--acent);
+    text-transform: uppercase;
+}
+.btn{ 
+    width: 4rem;
+    height: 2rem;
+    border:0;
+    border-radius: 20px;
+    background-color: var(--fondo-primario);
+    color: var(--fonts);
+    font-size: 1rem;
+    font-family: Dosis;
+}
+
+.contenedor-imagen {
+    
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.contenedor-imagen img {
+    
+    height: 100%;
+
+}
+.swal-modal {
+    background-color: var(--acent);
+    color:var(--fonts);
+    border-radius: 3px;
+    
+}
+.swal-title{
+    color: var(--fonts);
+    font-size: 3rem;
+}
+.swal-text {
+    color: var(--fonts);
+    font-size: 1.8rem;
+}
+.swal-button--confirm {
+    background-color: var(--fondo-primario);
+    
+}
+.swal-button--confirm:hover{
+    background-color: var(--fondo-secundario);
+}
+.swal-button--cancel {
+    background-color: rgba(200,200,200, .9);
+} 
+
+@media (min-width: 1300px){
+    .container{
+        height: 100vh;
+        width: 60vw;
+    }
+}
+
+
+@media (max-width: 800px){
+    .container{
+        height: 100vh;
+        width: 90vw;
+    }
+    .notificaciones h2{
+        font-size: 1.8rem;
+
+    }
+}
+
+@media (max-width: 562px) {
+    .titulo{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+   
+    .notificaciones h2{
+        font-size: 1.5rem;
+    }
+    .contenedor-imagen img {
+        height: 50%;
+    
+    }
+    
+}

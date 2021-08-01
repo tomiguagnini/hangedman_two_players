@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type=”image/x-icon” href=”favicon.ico” rel=”icon” />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/ahorcado.css">
+    <title>Ahorcado</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="titulo">
+            <img src="./img/icon-handing.png"></img>
+            <h1>Ahorcado</h1>
+        </div>
+        <div class="link">
+            <input type="text" id="board" />
+            <button class="btn-copy" id="btn-copy">Copy!</button>
+          </div>
+        <div class="notificaciones" id="notificaciones">
+            <h2 id="notificacion"></h2>
+        </div>
+        <div class="letras" id="letras">
+            <input type="text" maxlength="1" disabled>
+            <input type="text" maxlength="1" disabled>
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+        </div>
+        <div class="letras">
+            <input type="text" id="entrada" maxlength="1">
+            <button class="btn" id="enviar">Enviar</button>
+        </div>
+        <div class="contenedor-imagen" id="contenedor-img">
+        </div>
+    </div>
+
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/ahorcado-front.js"></script>
+</body>
+</html>
