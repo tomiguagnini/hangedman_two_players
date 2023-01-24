@@ -10,10 +10,13 @@ const input = document.getElementById('board')
 let errores = 0;
 var playerID= '0';
 var boardID= 0;
-
+ 
 new_Game()
 setInterval(()=>verificarSiTermino(),2000)
 
+setInterval(()=> {
+    esMiTurno().then(ok => ok?notificacion.textContent = 'Su Turno':null )
+},2000)
 
 btnEnviar.addEventListener('click',()=>{
     esMiTurno()
@@ -39,7 +42,7 @@ button_copy.addEventListener('click', () => {
   
   input.select()
   document.execCommand('copy')
-  input.blur()
+  //input.blur()
   button_copy.textContent = 'Copied!'
 })
 

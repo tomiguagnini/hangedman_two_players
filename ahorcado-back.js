@@ -1,8 +1,6 @@
 const palabras = require('./palabras.json')
-const fs = require('fs')
 const crypto = require('crypto')
-const e = require('express')
-const GAME_FILE = './ahorcado.json'
+
 
 class Ahorcado {
     constructor() {
@@ -90,7 +88,7 @@ class Ahorcado {
         if(this.lastPlay == 0)
             return -1
     }
-    setGameOver(id){
+    setGameOver(){
         this.gameOver = true   
     }
     getGameOver(){
