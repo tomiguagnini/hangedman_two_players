@@ -1,14 +1,13 @@
 const express = require('express')
 const app = express()
+const Ahorcado = require('./ahorcado-back')
+let salas = []
 
 app.use(express.json())
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 
-//ahorcado
 
-const Ahorcado = require('./ahorcado-back')
-let salas = []
 
 app.get('/',(req,res)=>{ 
     res.redirect('/ahorcado.html')
